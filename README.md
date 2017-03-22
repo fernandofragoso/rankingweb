@@ -3,48 +3,48 @@ Ranking Application
 
 ## Models
 
-* Item Player
-    * Item *string* name
-    * Item *string* phone
-    * Item *string* mail
+* Player
+    * *string* name
+    * *string* phone
+    * *string* mail
 
-* Item Championship
-    * Item *string* title
-    * Item *ChampionshipType* type
-    * Item *array Player* players
-    * Item *date* startDate
-    * Item *Player* champion
-    * Item *Player* runnerUp
-    * Item *boolean* validPoints
+* Championship
+    * *string* title
+    * *ChampionshipType* type
+    * *array Player* players
+    * *date* startDate
+    * *Player* champion
+    * *Player* runnerUp
+    * *boolean* validPoints
 
-* Item Match
-    * Item *Player* playerOne
-    * Item *Player* playerTwo
-    * Item *Round* round
-    * Item *Score* scorePlayerOne
-    * Item *Score* scorePlayerTwo
-    * Item *Championship* championship
-    * Item *integer* winner
-    * Item *Place* place
-    * Item *date* date
+* Match
+    * *Player* playerOne
+    * *Player* playerTwo
+    * *Round* round
+    * *Score* scorePlayerOne
+    * *Score* scorePlayerTwo
+    * *Championship* championship
+    * *integer* winner
+    * *Place* place
+    * *date* date
 
-* Item Round
-    * Item *string* name
-    * Item *string* abbreviation
-    * Item *integer* order
-    * Item *integer* winnerPoints
-    * Item *integer* looserPoints
+* Round
+    * *string* name
+    * *string* abbreviation
+    * *integer* order
+    * *integer* winnerPoints
+    * *integer* looserPoints
 
-* Item Score
-    * Item *integer* setOne
-    * Item *integer* setTwo
-    * Item *integer* setThree
-    * Item *boolean* wo
+* Score
+    * *integer* setOne
+    * *integer* setTwo
+    * *integer* setThree
+    * *boolean* wo
 
-* Item Place
-    * Item *string* name
-    * Item *string* address
-    * Item *Surface* surface
-    
-* Item Surface
-    * Item *string* name
+* Place
+    * *string* name
+    * *string* address
+    * *Surface* surface
+
+* Surface
+    * *string* name
