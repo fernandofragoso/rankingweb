@@ -1,5 +1,4 @@
-# rankingweb
-Ranking Application
+# Ranking Application
 
 ## Models
 
@@ -16,6 +15,12 @@ Ranking Application
     * *Player* champion
     * *Player* runnerUp
     * *boolean* validPoints
+
+* Group
+    * *string* name
+    * *integer* order
+    * *array Player* players
+    * *Championship* championship
 
 * Match
     * *Player* playerOne
@@ -48,3 +53,8 @@ Ranking Application
 
 * Surface
     * *string* name
+
+* ChampionshipType
+    * *Round* startingRound
+    * *boolean* groups
+    * *boolean* drawB
