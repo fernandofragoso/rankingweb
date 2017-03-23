@@ -1,6 +1,20 @@
 # Ranking Application
 
-## Models
+### About
+
+Sinatra Ranking API application
+
+### Installing
+
+Installation:
+
+    bundle install
+
+Starting the server:
+
+    shotgun
+
+### Models
 
 * Player
     * *string* name
