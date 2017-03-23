@@ -5,5 +5,3 @@ set :force_ssl, false
 set :environment, :development
 
 run Sinatra::Application
-
-# run MyApp.new

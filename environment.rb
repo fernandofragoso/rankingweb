@@ -27,5 +27,5 @@ end
 configure :production do
     DataMapper.setup(:default, "postgres://whifhvlngsdofr:3dd17310f4315de881d01999329cd6cacb9debf3566f67a7f58481189396de2b@ec2-184-72-249-88.compute-1.amazonaws.com/do62cegprqvl8")
     DataMapper.finalize
-    DataMapper.auto_migrate!    
+    DataMapper.auto_update!    
 end
