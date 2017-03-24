@@ -8,13 +8,13 @@ Sinatra Ranking API application
 
 Installation:
 
-    bundle install
+    bundle install --without production
 
 Starting the server:
 
     shotgun
 
-### Models
+#### Models
 
 * Player
     * *string* name
