@@ -3,18 +3,22 @@ require "bundler/setup"
 require "sinatra"
 require File.join(File.dirname(__FILE__), "environment")
 
-@player = Player.create(
-  :name        => "Fernando Fragoso",
-  :email       => "fernandofragoso@gmail.com",
-  :phone       => "988482529"
-)
-
 configure :production, :development do
   enable :logging
 end
 
 helpers do
-  # add your helpers here
+  def json_params
+    begin
+      JSON.parse(request.body.read)
+    rescue
+      halt 400, { message:'Invalid JSON' }.to_json
+    end
+  end
+end
+
+before do
+  content_type :json
 end
 
 get '/' do
@@ -22,7 +26,20 @@ get '/' do
 end
 
 get '/players' do
-    content_type :json
-    @players = Player.all()
-    @players.to_json
+  Player.all.to_json
+end
+
+get '/players/:id' do |id|
+  player = Player.first(:id => id)
+  halt(404, { message:'Player Not Found'}.to_json) unless player
+  player.to_json
+end
+
+post '/players' do
+  @player = Player.new(json_params)
+  if @player.save
+    status 201
+  else
+    status 400
+  end
 end
