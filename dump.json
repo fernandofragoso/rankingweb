@@ -1,0 +1,11 @@
+Rounds
+[{"id":1,"name":"Round Robin","abbreviation":"RR","orderIndex":1,"winnerPoints":10,"loserPoints":5},{"id":2,"name":"Primeira rodada","abbreviation":"R32","orderIndex":2,"winnerPoints":20,"loserPoints":20},{"id":3,"name":"Oitavas de final","abbreviation":"R16","orderIndex":3,"winnerPoints":20,"loserPoints":20},{"id":4,"name":"Quartas de final","abbreviation":"Q","orderIndex":4,"winnerPoints":20,"loserPoints":20},{"id":5,"name":"Semifinal","abbreviation":"S","orderIndex":5,"winnerPoints":40,"loserPoints":40},{"id":6,"name":"Final","abbreviation":"F","orderIndex":6,"winnerPoints":120,"loserPoints":60}]
+
+Courts
+[{"id":1,"name":"Squash Tennis Center","address":"Boa Viagem","surface_id":1},{"id":2,"name":"Recife Tenis Clube","address":"Imbiribeira","surface_id":1},{"id":3,"name":"Match Point","address":"TorreÃ£o","surface_id":1},{"id":4,"name":"Clube PortuguÃªs","address":"GraÃ§as","surface_id":2},{"id":5,"name":"Circulo Militar","address":"Boa Vista","surface_id":1},{"id":6,"name":"Quadras da Orla","address":"Pina","surface_id":2},{"id":7,"name":"Sport Clube","address":"Ilha do Retiro","surface_id":1}]
+
+Surfaces
+[{"id":1,"name":"Saibro"},{"id":2,"name":"Dura"}]
+
+Players
+[{"id":1,"name":"Fernando Fragoso","email":"fernandofragoso@gmail.com","phone":"988482529"},{"id":2,"name":"Ricardo Vasconcelos","email":"ricardovasc@gmail.com","phone":"988998899"}]

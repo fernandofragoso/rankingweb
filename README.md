@@ -21,14 +21,16 @@ Starting the server:
     * *string* phone
     * *string* mail
 
-* Championship
+* Tournament
     * *string* title
-    * *ChampionshipType* type
     * *array Player* players
     * *date* startDate
     * *Player* champion
     * *Player* runnerUp
     * *boolean* validPoints
+    * *Round* startingRound
+    * *boolean* groups
+    * *boolean* drawB
 
 * Group
     * *string* name
@@ -43,16 +45,15 @@ Starting the server:
     * *Score* scorePlayerOne
     * *Score* scorePlayerTwo
     * *Championship* championship
-    * *integer* winner
-    * *Place* place
+    * *Court* court
     * *date* date
 
 * Round
     * *string* name
     * *string* abbreviation
-    * *integer* order
+    * *integer* orderIndex
     * *integer* winnerPoints
-    * *integer* looserPoints
+    * *integer* loserPoints
 
 * Score
     * *integer* setOne
@@ -60,15 +61,10 @@ Starting the server:
     * *integer* setThree
     * *boolean* wo
 
-* Place
+* Court
     * *string* name
     * *string* address
     * *Surface* surface
 
 * Surface
     * *string* name
-
-* ChampionshipType
-    * *Round* startingRound
-    * *boolean* groups
-    * *boolean* drawB
